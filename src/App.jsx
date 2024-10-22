@@ -1,12 +1,12 @@
-function App() {
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+
+export default function App() {
   return (
-    <div className="container">
-      <h1 className="text-center text-primary">
-        Hello Bootstrap with React and Vite
-      </h1>
-      <button className="btn btn-success">Click Me</button>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;

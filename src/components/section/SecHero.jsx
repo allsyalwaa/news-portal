@@ -1,10 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import illustration from "../../assets/illustration.png";
-import profile from "../../assets/profile.png";
+import illustration from "../../assets/illustration.svg";
+import profile from "../../assets/profile.svg";
 
 export default function SecHero() {
   return (
-    <div className="container-fluid p-0 position-relative mt-5">
+    <div className="container position-relative mt-5">
       {/* Gambar Hero */}
       <img
         src={illustration}
@@ -16,8 +16,8 @@ export default function SecHero() {
       <div
         className="position-absolute bg-white text-dark p-4"
         style={{
-          bottom: "-30px", // Menggeser box keluar dari gambar
-          left: "30px",
+          bottom: "-40px", // Menggeser box keluar dari gambar
+          left: "50px",
           maxWidth: "450px",
           borderRadius: "12px",
           boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",

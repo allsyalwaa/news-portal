@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import logo from "../../assets/logo.png";
 
 export default function Footer() {
   return (
@@ -14,7 +15,7 @@ export default function Footer() {
               enim ad minim veniam.
             </p>
             <p>
-              <strong>Email:</strong> info@jstemplate.net
+              <strong>Email:</strong> csblog@example.com
             </p>
             <p>
               <strong>Phone:</strong> 880 123 456 789
@@ -26,22 +27,34 @@ export default function Footer() {
             <h5>Quick Link</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#">Home</a>
+                <a href="#" className="text-dark text-decoration-none">
+                  Home
+                </a>
               </li>
-              <li>
-                <a href="#">About</a>
+              <li className="mt-2">
+                <a href="#" className="text-dark text-decoration-none">
+                  About
+                </a>
               </li>
-              <li>
-                <a href="#">Blog</a>
+              <li className="mt-2">
+                <a href="#" className="text-dark text-decoration-none">
+                  Blog
+                </a>
               </li>
-              <li>
-                <a href="#">Archived</a>
+              <li className="mt-2">
+                <a href="#" className="text-dark text-decoration-none">
+                  Archived
+                </a>
               </li>
-              <li>
-                <a href="#">Author</a>
+              <li className="mt-2">
+                <a href="#" className="text-dark text-decoration-none">
+                  Author
+                </a>
               </li>
-              <li>
-                <a href="#">Contact</a>
+              <li className="mt-2">
+                <a href="#" className="text-dark text-decoration-none">
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
@@ -51,22 +64,34 @@ export default function Footer() {
             <h5>Category</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#">Lifestyle</a>
+                <a href="#" className="text-dark text-decoration-none">
+                  Lifestyle
+                </a>
               </li>
-              <li>
-                <a href="#">Technology</a>
+              <li className="mt-2">
+                <a href="#" className="text-dark text-decoration-none">
+                  Technology
+                </a>
               </li>
-              <li>
-                <a href="#">Travel</a>
+              <li className="mt-2">
+                <a href="#" className="text-dark text-decoration-none">
+                  Travel
+                </a>
               </li>
-              <li>
-                <a href="#">Business</a>
+              <li className="mt-2">
+                <a href="#" className="text-dark text-decoration-none">
+                  Business
+                </a>
               </li>
-              <li>
-                <a href="#">Economy</a>
+              <li className="mt-2">
+                <a href="#" className="text-dark text-decoration-none">
+                  Economy
+                </a>
               </li>
-              <li>
-                <a href="#">Sports</a>
+              <li className="mt-2">
+                <a href="#" className="text-dark text-decoration-none">
+                  Sports
+                </a>
               </li>
             </ul>
           </div>
@@ -95,18 +120,20 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="row mt-4">
-          <div className="col-md-6">
-            <p>&copy; JS Template 2023. All Rights Reserved.</p>
+        <div className="row py-4 d-flex align-items-center">
+          <div className="col-md-6 d-flex align-items-center">
+            <img src={logo} alt="MetaBlog Logo" style={{ height: "30px" }} />
           </div>
-          <div className="col-md-6 text-md-end">
-            <a href="#" className="me-3">
+          <div className="col-md-6 text-md-end d-flex align-items-center justify-content-md-end">
+            <a href="#" className="me-3 text-dark text-decoration-none">
               Terms of Use
             </a>
-            <a href="#" className="me-3">
+            <a href="#" className="me-3 text-dark text-decoration-none">
               Privacy Policy
             </a>
-            <a href="#">Cookie Policy</a>
+            <a href="#" className="text-dark text-decoration-none">
+              Cookie Policy
+            </a>
           </div>
         </div>
       </div>
